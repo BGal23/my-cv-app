@@ -31,6 +31,8 @@ import {
   SiStyledcomponents,
   SiReactquery,
   SiMui,
+  SiExpress,
+  SiWebpack,
 } from "react-icons/si";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
@@ -279,7 +281,7 @@ const CV = React.forwardRef<
 const App: React.FC = () => {
   const [formData, setFormData] = useState<CVData>({
     name: "Bartłomiej Gal",
-    position: "Fullstack Developer",
+    position: "Front-end Developer",
     email: "jan.kowalski@example.com",
     phone: "+48 123 456 789",
     about: "",
@@ -345,7 +347,7 @@ const App: React.FC = () => {
     },
     {
       isActive: false,
-      name: "SASS",
+      name: "SASS/SCSS",
       icon: <FaSass size={"2em"} />,
     },
     {
@@ -367,6 +369,16 @@ const App: React.FC = () => {
       isActive: false,
       name: "Visual Studio",
       icon: <BiLogoVisualStudio size={"2em"} />,
+    },
+    {
+      isActive: false,
+      name: "Express",
+      icon: <SiExpress size={"2em"} />,
+    },
+    {
+      isActive: false,
+      name: "WebPack",
+      icon: <SiWebpack size={"2em"} />,
     },
   ]);
 
@@ -610,6 +622,10 @@ const App: React.FC = () => {
             >
               <option value="Front-end Developer">Front-end Developer</option>
               <option value="Full-stack Developer">Full-stack Developer</option>
+              <option value="JavaScript Developer">JavaScript Developer</option>
+              <option value="TypeScript Developer">TypeScript Developer</option>
+              <option value="React Developer">React Developer</option>
+              <option value="Node.js Developer">Node.js Developer</option>
             </select>
           </label>
           <br />
